@@ -666,12 +666,14 @@ H.apply_palette = function(palette, use_cterm)
   hi('@tag.attribute', {fg=p.base09, bg=nil, attr=nil, sp=nil})
 
   -- Semantic tokens
-  -- Source: `:h lsp-semantic-highlight`
-  -- Included only those differing from default links
-  hi('@lsp.type.variable',      {fg=p.base08, bg=nil, attr=nil, sp=nil})
+  if vim.fn.has('nvim-0.9') == 1 then
+    -- Source: `:h lsp-semantic-highlight`
+    -- Included only those differing from default links
+    hi('@lsp.type.variable',      {fg=p.base08, bg=nil, attr=nil, sp=nil})
 
-  hi('@lsp.mod.defaultLibrary', {link='Special'})
-  hi('@lsp.mod.deprecated',     {fg=p.base0F, bg=nil, attr=nil, sp=nil})
+    hi('@lsp.mod.defaultLibrary', {link='Special'})
+    hi('@lsp.mod.deprecated',     {fg=p.base0F, bg=nil, attr=nil, sp=nil})
+  end
 
   -- New tree-sitter groups
   if vim.fn.has('nvim-0.10') == 1 then
