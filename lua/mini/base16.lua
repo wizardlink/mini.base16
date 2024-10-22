@@ -661,8 +661,9 @@ H.apply_palette = function(palette, use_cterm)
   hi('@text.strike',    {fg=nil, bg=nil, attr='strikethrough', sp=nil})
   hi('@text.underline', {link='Underlined'})
 
-  -- HTML Specific
+  -- Tags
   hi('@tag.delimiter', {fg=p.base05, bg=nil, attr=nil, sp=nil})
+  hi('@tag.attribute', {fg=p.base09, bg=nil, attr=nil, sp=nil})
 
   -- Semantic tokens
   -- Source: `:h lsp-semantic-highlight`
