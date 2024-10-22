@@ -652,9 +652,9 @@ H.apply_palette = function(palette, use_cterm)
   -- - `:h treesitter-highlight-groups`
   -- - https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
   -- Included only those differing from default links
-  hi('@keyword.return', {fg=p.base08, bg=nil, attr=nil, sp=nil})
+  hi('@keyword.return', {fg=p.base0E, bg=nil, attr=nil, sp=nil})
   hi('@symbol',         {fg=p.base0E, bg=nil, attr=nil, sp=nil})
-  hi('@variable',       {fg=p.base05, bg=nil, attr=nil, sp=nil})
+  hi('@variable',       {fg=p.base08, bg=nil, attr=nil, sp=nil})
 
   hi('@text.strong',    {fg=nil, bg=nil, attr='bold',          sp=nil})
   hi('@text.emphasis',  {fg=nil, bg=nil, attr='italic',        sp=nil})
@@ -665,10 +665,10 @@ H.apply_palette = function(palette, use_cterm)
   if vim.fn.has('nvim-0.9') == 1 then
     -- Source: `:h lsp-semantic-highlight`
     -- Included only those differing from default links
-    hi('@lsp.type.variable',      {fg=p.base05, bg=nil, attr=nil, sp=nil})
+    hi('@lsp.type.variable',      {fg=p.base08, bg=nil, attr=nil, sp=nil})
 
     hi('@lsp.mod.defaultLibrary', {link='Special'})
-    hi('@lsp.mod.deprecated',     {fg=p.base08, bg=nil, attr=nil, sp=nil})
+    hi('@lsp.mod.deprecated',     {fg=p.base0F, bg=nil, attr=nil, sp=nil})
   end
 
   -- New tree-sitter groups
