@@ -551,7 +551,7 @@ H.apply_palette = function(palette, use_cterm)
   hi('Constant',       {fg=p.base09, bg=nil,      attr=nil, sp=nil})
   hi('Debug',          {fg=p.base08, bg=nil,      attr=nil, sp=nil})
   hi('Define',         {fg=p.base0E, bg=nil,      attr=nil, sp=nil})
-  hi('Delimiter',      {fg=p.base0F, bg=nil,      attr=nil, sp=nil})
+  hi('Delimiter',      {fg=p.base05, bg=nil,      attr=nil, sp=nil})
   hi('Error',          {fg=p.base00, bg=p.base08, attr=nil, sp=nil})
   hi('Exception',      {fg=p.base08, bg=nil,      attr=nil, sp=nil})
   hi('Float',          {fg=p.base09, bg=nil,      attr=nil, sp=nil})
@@ -574,7 +574,7 @@ H.apply_palette = function(palette, use_cterm)
   hi('StorageClass',   {fg=p.base0A, bg=nil,      attr=nil, sp=nil})
   hi('String',         {fg=p.base0B, bg=nil,      attr=nil, sp=nil})
   hi('Structure',      {fg=p.base0E, bg=nil,      attr=nil, sp=nil})
-  hi('Tag',            {fg=p.base0A, bg=nil,      attr=nil, sp=nil})
+  hi('Tag',            {fg=p.base08, bg=nil,      attr=nil, sp=nil})
   hi('Todo',           {fg=p.base0A, bg=p.base01, attr=nil, sp=nil})
   hi('Type',           {fg=p.base0A, bg=nil,      attr=nil, sp=nil})
   hi('Typedef',        {fg=p.base0A, bg=nil,      attr=nil, sp=nil})
@@ -660,6 +660,9 @@ H.apply_palette = function(palette, use_cterm)
   hi('@text.emphasis',  {fg=nil, bg=nil, attr='italic',        sp=nil})
   hi('@text.strike',    {fg=nil, bg=nil, attr='strikethrough', sp=nil})
   hi('@text.underline', {link='Underlined'})
+
+  -- HTML Specific
+  hi('@tag.delimiter', {fg=p.base05, bg=nil, attr=nil, sp=nil})
 
   -- Semantic tokens
   -- Source: `:h lsp-semantic-highlight`
